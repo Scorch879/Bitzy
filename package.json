@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "discord.js": "^14.22.1",
+    "dotenv": "^17.2.2",
+    "googleapis": "^160.0.0"
+  },
+  "name": "bitzy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scorch879/Bitzy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Scorch879/Bitzy/issues"
+  },
+  "homepage": "https://github.com/Scorch879/Bitzy#readme"
+}
