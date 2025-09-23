@@ -16,10 +16,16 @@ const client = new Client({
 
 // Google Sheets setup
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
-const auth = new google.auth.GoogleAuth({
+/*const auth = new google.auth.GoogleAuth({
   keyFile: 'service-account.json', // path to your Google Service Account JSON
   scopes: SCOPES,
+}); */ //This is for local machine testing only
+
+const auth = new google.auth.GoogleAuth({
+  keyFile: '/run/secrets/service-account.json', // path for secret files in Render
+  scopes: SCOPES,
 });
+
 const sheets = google.sheets({ version: 'v4', auth });
 const SPREADSHEET_ID = '1fVXutF_IkloKyzT9AO_7F-68r6i55W6z7yEonYsQjlw';
 const SHEET_NAME = 'Student_Data';
