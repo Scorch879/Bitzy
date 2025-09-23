@@ -71,7 +71,7 @@ client.on('messageCreate', async message => {
   try {
     const res = await sheets.spreadsheets.values.get({
       spreadsheetId: SPREADSHEET_ID,
-      range: `${SHEET_NAME}!A2:D`,
+      range: `${SHEET_NAME}!A1:D`,
     });
 
     const rows = res.data.values;
