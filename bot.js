@@ -90,13 +90,13 @@ client.on('messageCreate', async message => {
     }
 
     // Assign roles
-    const verifiedRole = message.guild.roles.cache.find(r => r.name === 'ka-CpE');
+    const verifiedRole = message.guild.roles.cache.find(r => r.name === 'Verified');
     const unverifiedRole = message.guild.roles.cache.find(r => r.name === 'Unverified');
 
     if (verifiedRole) await message.member.roles.add(verifiedRole);
     if (unverifiedRole) await message.member.roles.remove(unverifiedRole);
 
-    const fullName = `${student[2]}`; 
+    const fullName = `${student[2]} ${student[3]} ${student[1]}`; 
 
     const replyMsg = await message.reply(`✅ Verified! Welcome, ${fullName}.`);
     setTimeout(() => {
