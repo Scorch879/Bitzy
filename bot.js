@@ -97,7 +97,7 @@ client.on('messageCreate', async message => {
     }
 
     // Assign roles
-    const verifiedRole = message.guild.roles.cache.find(r => r.name === 'Verified');
+    const verifiedRole = message.guild.roles.cache.find(r => r.name === 'ka-CpE');
     const unverifiedRole = message.guild.roles.cache.find(r => r.name === 'Unverified');
 
     if (verifiedRole) await message.member.roles.add(verifiedRole);
