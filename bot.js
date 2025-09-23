@@ -1,5 +1,6 @@
 const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const { google } = require('googleapis');
+const express = require('express');
 require('dotenv').config();
 
 // Create Discord client
@@ -114,8 +115,6 @@ client.on('messageCreate', async message => {
   }
 });
 
-
-const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 

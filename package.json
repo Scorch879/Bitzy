@@ -1,13 +1,4 @@
 {
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "discord.js": "^14.22.1",
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "googleapis": "^160.0.0"
-  },
   "name": "bitzy",
   "version": "1.0.0",
   "description": "",
@@ -16,6 +7,16 @@
     "type": "git",
     "url": "git+https://github.com/Scorch879/Bitzy.git"
   },
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.1",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "googleapis": "^160.0.0"
+  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
