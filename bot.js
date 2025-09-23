@@ -21,13 +21,10 @@ const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
   scopes: SCOPES,
 }); */ //This is for local machine testing only
 
-const fs = require('fs');
-if (!fs.existsSync('/run/secrets/service-account.json')) {
-  console.error('❌ Secret file not found at /run/secrets/service-account.json');
-} else {
-  console.log('✅ Secret file loaded successfully!');
-}
-
+const auth = new google.auth.GoogleAuth({
+  credentials: JSON.parse(process.env.GOOGLE_CREDS_JSON),
+  scopes: SCOPES,
+});
 
 const sheets = google.sheets({ version: 'v4', auth });
 const SPREADSHEET_ID = '1fVXutF_IkloKyzT9AO_7F-68r6i55W6z7yEonYsQjlw';
